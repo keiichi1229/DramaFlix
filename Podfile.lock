@@ -1,0 +1,34 @@
+PODS:
+  - Cosmos (22.1.0)
+  - GSMessages (1.7.3)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - TinyConstraints (4.0.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Cosmos
+  - GSMessages
+  - NVActivityIndicatorView
+  - TinyConstraints
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - GSMessages
+    - NVActivityIndicatorView
+    - TinyConstraints
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  GSMessages: b9bcf210247426ae113ff22eac1d8f03ad5dee53
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: adcb73e1c14692e9afc959efc960efd814110cd6
+
+COCOAPODS: 1.9.3
