@@ -94,6 +94,7 @@ final class DramaDataMgr
 {
     static let shared = DramaDataMgr()
     
+    // NOTE:: Test it on real device for this to work. Testing on simulator will get a half-baked result.
     private let netwrokMonitor = NWPathMonitor()
     
     private let queryDramaDataUrl: String = "https://static.linetv.tw/interview/dramas-sample.json"
