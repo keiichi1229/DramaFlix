@@ -8,7 +8,7 @@
 
 import Foundation
 
-class APIMgr
+class HttpMgr
 {
     typealias CompleteHandler = ((Data?, URLResponse?, Error?) -> Void)
     let requestSerialQueue = DispatchQueue(label: "requestSerialQueue")
@@ -16,7 +16,7 @@ class APIMgr
     private let requestTimout: TimeInterval = 10
     private let requestResourceTimout: TimeInterval = 30
     
-    static let shared = APIMgr()
+    static let shared = HttpMgr()
     
     func doHttpRequest(withURL url : String, completeHandler : @escaping(CompleteHandler))
     {
@@ -25,7 +25,7 @@ class APIMgr
                 sessionConfig.timeoutIntervalForRequest = requestTimout
                 sessionConfig.timeoutIntervalForResource = requestResourceTimout
                 let session = URLSession(configuration: sessionConfig)
-                
+            
                 session.dataTask(with: URL(string: url)!, completionHandler: {(data, response, error) in
                         if let error = error
                         {

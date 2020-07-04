@@ -189,7 +189,7 @@ final class DramaDataMgr
     
     internal func refreshData(fromLink link: String)
     {
-        APIMgr.shared.doHttpRequest(withURL: link, completeHandler: {
+        HttpMgr.shared.doHttpRequest(withURL: link, completeHandler: {
             (data, resp, error) in
             if error == nil
             {
@@ -271,7 +271,7 @@ final class DramaDataMgr
                 continue
             }
             
-            APIMgr.shared.doHttpRequest(withURL: link!, completeHandler: { (data, resp, error) in
+            HttpMgr.shared.doHttpRequest(withURL: link!, completeHandler: { (data, resp, error) in
                 guard
                     let httpURLResponse = resp as? HTTPURLResponse, httpURLResponse.statusCode == 200,
                     let mimeType = resp?.mimeType, mimeType.hasPrefix("image"),
