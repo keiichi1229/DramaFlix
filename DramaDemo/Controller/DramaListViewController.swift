@@ -159,6 +159,8 @@ class DramaListViewController: UITableViewController, UISearchResultsUpdating, U
         _searchBarControl?.searchBar.placeholder = "Search your drama"
         _searchBarControl?.searchBar.delegate = self
         _searchBarControl?.searchBar.tintColor = .red
+        _searchBarControl?.obscuresBackgroundDuringPresentation = false
+        _searchBarControl?.hidesNavigationBarDuringPresentation = false
         navigationItem.searchController = _searchBarControl
         // default is hidden
         displaySearchBar(display: false)
